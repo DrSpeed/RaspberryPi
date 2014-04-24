@@ -58,9 +58,9 @@ mv -f $hour_filename     /var/www/hourImages/$hour_filename
 #-------------------------------------------
 # Raspberry Pi Camera (parallel)
 # Copy to daily with new name
-cp -f $rps_hour_filename  /var/www/dayImages/$rps_hour_filename
+cp -f $rps_hour_filename  /var/www/dayImages/$rps_day_filename
 # Move it to hourly
-mv -f $rps_hour_filename /var/www/hourImages/$rps_day_filename
+mv -f $rps_hour_filename /var/www/hourImages/$rps_hour_filename
 
 
 # Play a sound
