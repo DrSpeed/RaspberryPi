@@ -46,7 +46,7 @@ def renderRow(dateData):
                 c = [ (230, 230, 255), (255, 153, 0), (255, 255, 0)]  # [BLUE, GREEN, RED]
                 nSeconds = min(MAX_TIME, nSeconds)
                 rowstr = "{0:.0f}".format(nSeconds)
-                //print "Secs: " + rowstr
+                #print "Secs: " + rowstr
                 bgc =  convert_to_rgb( 0, MAX_TIME, nSeconds, c)
 
             target.write('<td width="4%" bgcolor="{1}">{0}</td>'.format(rowstr, bgc))
