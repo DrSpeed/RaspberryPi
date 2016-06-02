@@ -25,7 +25,7 @@ capshell = '/home/pi/node/capture.sh'
 
 motionState = False;
 
-MAX_TIME = 3600  // Avoid odd power cycle cases
+MAX_TIME = 3600  #Avoid odd time issues after reboot
 
 
 while True:
