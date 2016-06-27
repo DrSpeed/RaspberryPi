@@ -9,7 +9,7 @@ cat /home/pi/git/RaspberryPi/metro_date_template.xml | sed  -e 's/date_alias/'"$
 curl -u swinter@gracenote:<pwd> -L https://mailhost.gracenote.gracenote.com/ews/exchange.asmx -H "Content-Type:text/xml" --data "@/tmp/today.xml" --ntlm > /tmp/samp.xml; xmllint --format /tmp/samp.xml > /tmp/exchng_meeting_data.xml
 
 
-curl -u swinter@gracenote:99_Danger_99 -L https://mailhost.gracenote.gracenote.com/ews/exchange.asmx -H "Content-Type:text/xml" --data "@/tmp/metro_today.xml" --ntlm > /tmp/metro_samp.xml; xmllint --format /tmp/metro_samp.xml > /tmp/metro_exchng_meeting_data.xml
+curl -u swinter@gracenote:<pwd> -L https://mailhost.gracenote.gracenote.com/ews/exchange.asmx -H "Content-Type:text/xml" --data "@/tmp/metro_today.xml" --ntlm > /tmp/metro_samp.xml; xmllint --format /tmp/metro_samp.xml > /tmp/metro_exchng_meeting_data.xml
 
 #write meeting report to an html file
 xsltproc /home/pi/git/RaspberryPi/ewsToHtml.xsl /tmp/exchng_meeting_data.xml > /var/www/html/today.html
