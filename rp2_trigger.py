@@ -6,6 +6,8 @@ import RPi.GPIO as io
 import sqlite3 as lite
 import time
 
+# Put this in:  /etc/rc.local at end, before exit
+
 # set up GPIO
 io.setmode(io.BCM)
 pir_pin = 4
