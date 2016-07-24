@@ -1,3 +1,5 @@
+// usage  nodejs getfileparams.js <url> <localfilename>
+
 var http = require('http');
 var fs = require('fs');
 
